@@ -15,6 +15,4 @@ const f1 = partial(sum, 2, 3, 4);
 const f2 = partial(f1, 5, 6, 7);
 const result = f2(8, 9);
 
-console.log({
-  result
-});
+console.log({ result });
