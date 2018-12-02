@@ -1,8 +1,10 @@
-// Realization of currying our function gets another function // as the argument and returns function that will check 
-// quantity of gotten parametrs if it's enought to fill all // parametrs in first function, our function will be 
-// excexuted, else we will bind them in fn parametrs. On 
-// every call  we will bind them and if its enough to 
-// excexute our function will be excecuted.
+//  Realization of currying our function gets another function
+//  as the argument and returns function that will check 
+//  quantity of gotten parametrs if it's enought to fill all  
+//  parametrs in first function, our function will be 
+//  excexuted, else we will bind them in fn parametrs. 
+//  On every call  we will bind them and if its enough to 
+//  excexute our function will be excecuted.
 
 const curry = fn => (...args) => {
   if (fn.length > args.length) {
