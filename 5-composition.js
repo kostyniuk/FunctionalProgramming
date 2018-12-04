@@ -25,8 +25,8 @@ let example = '';
 for (let i = 1; i < 3; i++) {
   example += `${example}{i}`;
 }
-console.log(example);
 
+console.log(example);
 
 console.log('Example : ' + example1);
 console.log('Manually: ' + capitilizeAll(lower(example1)));
