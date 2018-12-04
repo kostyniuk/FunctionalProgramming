@@ -1,5 +1,5 @@
 // Realization of compostion of two functions
-const compose = (f1, f2) => x => f2(f1(x));
+const compose = (f1, f2) => (...args) => f2(f1(...args));
 
 // Convertion strings method toLowerCase() to a function
 // that can be composed. We applied this because we can't
@@ -17,8 +17,17 @@ const capitilizeAll = s =>
 
 const capitalization = compose(lower, capitilizeAll);
 
-const example = 'Just a simple sentence, it dOesn\'t have ANY sence.';
+const example1 = 'Just a simple sentence, it dOesn\'t have ANY sence. ';
 
-console.log('Example : ' + example);
-console.log('Manually: ' + capitilizeAll(lower(example)));
-console.log('Compose: ' + capitalization(example));
+const example2 = 'Just another SEntence, that i have created';
+
+let example = '';
+for (let i = 1; i < 3; i++) {
+  example += `${example}{i}`;
+}
+console.log(example);
+
+
+console.log('Example : ' + example1);
+console.log('Manually: ' + capitilizeAll(lower(example1)));
+console.log('Compose: ' + capitalization(example1 + example2));
