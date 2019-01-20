@@ -15,5 +15,4 @@ const fn = cancelable(upper);
 fn('jahseh')
 fn('onfroy')
 fn.cancel();
-fn('xxxtentacion')/* function is canceled before, so this execution                          won't work(Literally, it will, but fn = null)
-                  */
+fn('xxxtentacion')/* function is canceled before, so this execution won't work(Literally, it will, but fn = null) */
