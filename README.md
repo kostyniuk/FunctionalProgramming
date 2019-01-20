@@ -1,0 +1,2 @@
+# FunctionalProgramming
+Author: Alex Kostyniuk
