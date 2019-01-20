@@ -5,7 +5,7 @@
 // if so we shift our array of functions and execute 
 // this function with the parametrs that previous 
 // function returned (in a very first iteration we use 
-//the parametrs that user gave us with call).
+// the parametrs that user gave us with call).
 // If no functions were acquired we just return the arguments.
 
 const compose = (...fns) => (...args) => {

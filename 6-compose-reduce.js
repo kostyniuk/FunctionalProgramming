@@ -1,4 +1,3 @@
-
 // Composition of functions that uses reduce() function.
 // It gets functions and returns another function that 
 // require arguments and returns result of composition.

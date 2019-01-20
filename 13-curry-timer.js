@@ -11,7 +11,7 @@ const curry = fn => (...args) => {
 const print = () => console.log('The function is excecuted');
 
 // Swap of argumnets. Therefore, all functions have the same contract.
-const timer = curry((fn, time) => setTimeout(time, fn));
+const timer = curry((time, fn) => setTimeout(fn, time));
 
 // USAGE of curry
 const timer5s = timer(5000);
