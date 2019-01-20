@@ -9,7 +9,10 @@ const cancelable = (fn) => {
   return wrapper;
 };
 
+// test function
 const upper = s => console.log(s.charAt(0).toUpperCase() + s.slice(1));
+
+// USAGE  
 
 const fn = cancelable(upper);
 fn('jahseh')
