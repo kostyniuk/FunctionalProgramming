@@ -10,7 +10,7 @@ const limit = (n, fn) => {
   }
 }
 
-const print = (...args) => console.log(`Arguments : ${args}`)
+const print = (...args) => console.log(`Arguments : ${args}`);
 
 // USAGE
 
